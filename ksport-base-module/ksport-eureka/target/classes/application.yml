@@ -1,0 +1,7 @@
+# 服务名 ，很重要 ，后期 config 配置中心会以 服务名为标识找对应的 服务
+spring:
+  application:
+    name: ksport-eureka
+  profiles:
+    # 主要激活哪个配置文件
+    active: peer3

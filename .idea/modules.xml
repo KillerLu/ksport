@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ksport.iml" filepath="$PROJECT_DIR$/ksport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksport-base-module/ksport-base-module.iml" filepath="$PROJECT_DIR$/ksport-base-module/ksport-base-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksport-base-module/ksport-config/ksport-config.iml" filepath="$PROJECT_DIR$/ksport-base-module/ksport-config/ksport-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksport-base-module/ksport-config-server/ksport-config-server.iml" filepath="$PROJECT_DIR$/ksport-base-module/ksport-config-server/ksport-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/ksport-eureka.iml" filepath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/ksport-eureka.iml" />
+    </modules>
+  </component>
+</project>

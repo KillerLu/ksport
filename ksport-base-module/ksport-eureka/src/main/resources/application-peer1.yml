@@ -1,0 +1,18 @@
+# 本身是注册中心，但是也需要注册，这里可以向自己注册
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-9002:9002/eureka,http://eureka-9003:9003/eureka
+    # 不在页面上显示当前 服务
+    register-with-eureka: true
+    # 为true时，可以启动，但报异常：Cannot execute request on any known server
+    fetch-registry: false
+  instance: # eureak实例定义
+    hostname: eureka-9001 # 定义Eureka实例所在的主机名称
+# 当应用上线率过低时，eureka会启动保护机制，默认确定当前服务是开启的，开发 环境中尽量关闭（设置为false）
+  server:
+    enable-self-preservation: false
+
+# 设置当前项目端口号
+server:
+  port: 9001
