@@ -3,8 +3,12 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-base-module" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ksport-base-module/ksport-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ksport-base-module/ksport-auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ksport-base-module/ksport-code-generator" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-base-module/ksport-config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ksport-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ksport-common/ksport-common-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ksport-common/ksport-common-security" charset="UTF-8" />
   </component>
 </project>

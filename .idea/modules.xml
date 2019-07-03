@@ -3,7 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ksport.iml" filepath="$PROJECT_DIR$/ksport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksport-base-module/ksport-auth/ksport-auth.iml" filepath="$PROJECT_DIR$/ksport-base-module/ksport-auth/ksport-auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-base-module/ksport-base-module.iml" filepath="$PROJECT_DIR$/ksport-base-module/ksport-base-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksport-base-module/ksport-code-generator/ksport-code-generator.iml" filepath="$PROJECT_DIR$/ksport-base-module/ksport-code-generator/ksport-code-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksport-common/ksport-common.iml" filepath="$PROJECT_DIR$/ksport-common/ksport-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksport-common/ksport-common-core/ksport-common-core.iml" filepath="$PROJECT_DIR$/ksport-common/ksport-common-core/ksport-common-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksport-common/ksport-common-security/ksport-common-security.iml" filepath="$PROJECT_DIR$/ksport-common/ksport-common-security/ksport-common-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-base-module/ksport-config/ksport-config.iml" filepath="$PROJECT_DIR$/ksport-base-module/ksport-config/ksport-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-base-module/ksport-config-server/ksport-config-server.iml" filepath="$PROJECT_DIR$/ksport-base-module/ksport-config-server/ksport-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/ksport-eureka.iml" filepath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/ksport-eureka.iml" />

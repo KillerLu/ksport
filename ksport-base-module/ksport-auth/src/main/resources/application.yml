@@ -1,0 +1,8 @@
+server:
+  port: 9020
+ksport:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ksport?characterEncoding=utf8&allowMultiQueries=true&useSSL=false
+    username: killer
+    password: leekawah123
+    driver-class-name: com.mysql.jdbc.Driver

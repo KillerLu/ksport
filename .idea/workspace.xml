@@ -2,10 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="906e1973-7b3d-4d2c-8a50-064bceea44da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_53.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_4_6_0_201612231935_r.xml" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-auth/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/KsportAuthApplication.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/conf/WebSecurityConfig.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/controller/LoginController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/controller/TestController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/filter/JWTAuthenticationFilter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/model/LoginDetail.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/model/TokenDetail.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/model/view/LoginUser.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/service/LoginService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/service/impl/LoginServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/util/MyJwtParser.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/util/TokenUtils.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/resources/application.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/resources/bootstrap.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-code-generator/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/java/com/killer/ksport/code/generator/CodeGenerator.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/resources/templates/Entity.java.vm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/resources/templates/Mapper.java.vm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/resources/templates/Mapper.xml.vm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/A.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/config/GlobalMybatisPlusConfig.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/config/KsportMybatisPlusConfig.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/DataSourceContextHolder.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/MultipleDataSource.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/dao/ksport/RoleDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/fill/MyMetaObjectHandler.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/fill/filter/FieldFilter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/fill/filter/impl/CreateTimeFieldFilter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/fill/filter/impl/IsDeleteFieldFilter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/fill/filter/impl/ModifyTimeFieldFilter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/mapping/ksport/A.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/util/DateUtil.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/util/SpringContextUtil.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/web/ResponseBuilder.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-security/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/ksport-common-security/src/main/java/com/killer/ksport/common/security/vo/RequestLoginUser.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ksport-common/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_1_1_6.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ksport-base-module/ksport-base-module.iml" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-base-module.iml" />
+      <change beforePath="$PROJECT_DIR$/ksport-base-module/ksport-config-server/ksport-config-server.iml" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-config-server/ksport-config-server.iml" />
+      <change beforePath="$PROJECT_DIR$/ksport-base-module/ksport-config-server/pom.xml" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-config-server/pom.xml" />
       <change beforePath="$PROJECT_DIR$/ksport-base-module/ksport-config-server/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-config-server/src/main/resources/application.yml" />
+      <change beforePath="$PROJECT_DIR$/ksport-base-module/ksport-config/config/test-dev.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ksport-base-module/ksport-config/ksport-config.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/ksport-eureka.iml" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/ksport-eureka.iml" />
+      <change beforePath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources/application.yml" />
+      <change beforePath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/target/classes/application.yml" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/target/classes/application.yml" />
+      <change beforePath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/target/ksport-eureka-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/target/ksport-eureka-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/target/ksport-eureka-1.0-SNAPSHOT.jar.original" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/ksport-base-module/pom.xml" afterPath="$PROJECT_DIR$/ksport-base-module/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/ksport.iml" afterPath="$PROJECT_DIR$/ksport.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -13,12 +70,22 @@
     <ignored path="$PROJECT_DIR$/ksport-base-module/ksport-eureka/target/" />
     <ignored path="$PROJECT_DIR$/ksport-base-module/ksport-config/target/" />
     <ignored path="$PROJECT_DIR$/ksport-base-module/ksport-config-server/target/" />
+    <ignored path="$PROJECT_DIR$/ksport-base-module/ksport-auth/target/" />
+    <ignored path="$PROJECT_DIR$/ksport-common/target/" />
+    <ignored path="$PROJECT_DIR$/ksport-common/ksport-common-core/target/" />
+    <ignored path="$PROJECT_DIR$/ksport-common/ksport-common-security/target/" />
+    <ignored path="$PROJECT_DIR$/ksport-base-module/ksport-code-generator/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ksport$KsportAuthApplication.coverage" NAME="KsportAuthApplication Coverage Results" MODIFIED="1562051805882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.killer.ksport.auth.*</FILTER>
+    </SUITE>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -31,114 +98,117 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ksport" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ksport" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ksport" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ksport: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ksport" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ksport: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="t_role: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="CodeGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/java/com/killer/ksport/code/generator/CodeGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-311">
-              <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KsportEurekaApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/java/com/killer/ksport/eureka/KsportEurekaApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="1342">
+              <caret line="82" column="32" lean-forward="false" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
+                <element signature="e#4462#4600#0" expanded="true" />
+                <element signature="e#4599#4600#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-config-server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KsportConfigApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-config-server/src/main/java/com/KsportConfigApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ksport-base-module/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test-dev.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-config/config/test-dev.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-config-server/src/main/resources/application.yml">
+      <file leaf-file-name="A.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/mapping/ksport/A.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="10" column="53" lean-forward="false" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+              <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="429">
+              <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Role.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/view/ksport/Role.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="619">
+              <caret line="95" column="46" lean-forward="true" selection-start-line="95" selection-start-column="46" selection-end-line="95" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-code-generator/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entity.java.vm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/resources/templates/Entity.java.vm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="70" column="30" lean-forward="false" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInfo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/view/ksport/UserInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1727">
+              <caret line="115" column="16" lean-forward="false" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KsportAuthApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/KsportAuthApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -149,9 +219,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>doFil</find>
+      <find>config</find>
+      <find>doFilter</find>
+      <find>parse</find>
+      <find>u</find>
+      <find>tablePrefix</find>
+      <find>update</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -172,21 +254,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-security/src/main/java/com/killer/ksport/common/security/vo/RequestLoginUser.java" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/model/view/LoginUser.java" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/conf/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/util/MyJwtParser.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-security/src/main/java/com/killer/ksport/common/security/view/Role.java" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/util/TokenUtils.java" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/filter/JWTAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/A.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/dao/UserAccountDao.java" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/mapping/A.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/mapping/ksport/A.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/dao/ksport/UserAccountDao.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/util/SpringContextUtil.java" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/service/impl/LoginServiceImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/ksport-base-module/ksport-eureka/pom.xml" />
-        <option value="$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/java/com/killer/ksport/eureka/KsportEurekaApplication.java" />
-        <option value="$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources/application-peer1.yml" />
-        <option value="$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources/application-peer2.yml" />
-        <option value="$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources/application-peer3.yml" />
-        <option value="$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/ksport-base-module/ksport-config/pom.xml" />
-        <option value="$PROJECT_DIR$/ksport-base-module/ksport-config/src/main/java/com/KsportConfigApplication.java" />
-        <option value="$PROJECT_DIR$/ksport-base-module/ksport-config/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/ksport-base-module/pom.xml" />
-        <option value="$PROJECT_DIR$/ksport-base-module/ksport-config/config/test.properties" />
-        <option value="$PROJECT_DIR$/ksport-base-module/ksport-config-server/src/main/java/com/KsportConfigApplication.java" />
-        <option value="$PROJECT_DIR$/ksport-base-module/ksport-config-server/pom.xml" />
-        <option value="$PROJECT_DIR$/ksport-base-module/ksport-config-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-security/pom.xml" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/conf/KsportMybatisConfig.java" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/KsportAuthApplication.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/test/java/com/AppTest.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/MultipleDataSource.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/DataSourceContextHolder.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/dao/ksport/RoleDao.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/config/KsportMybatisConfig.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/config/AbstractMybatisPlusConfig.java" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/test/java/com/killer/AppTest.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/fill/filter/FieldFiller.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/enums/LogicDeleteEnum.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/fill/filter/impl/IsDeleteFieldFilter.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/util/DateUtil.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/fill/filter/impl/CreateTimeFieldFilter.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/fill/filter/impl/ModifyTimeFieldFilter.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/fill/MyMetaObjectHandler.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/config/KsportMybatisPlusConfig.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fa2cff41-8bcf-4023-b25e-4c4b54dca3a6/console.sql" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/view/Role.java" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/config/GlobalMybatisPlusConfig.java" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-code-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/java/com/killer/ksport/base/code/generator/CodeGenerator.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/view/A.java" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/resources/templates/Mapper.java.vm" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/java/com/killer/ksport/code/generator/CodeGenerator.java" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/resources/templates/Mapper.xml.vm" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/view/ksport/Role.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/view/ksport/UserInfo.java" />
+        <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/pom.xml" />
+        <option value="$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/resources/templates/Entity.java.vm" />
       </list>
     </option>
   </component>
@@ -201,39 +319,21 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ksport-config" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="ksport-common-security" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ksport-config" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ksport-eureka" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ksport-eureka" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="ksport-common-security" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ksport-eureka" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mengma-sc-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-277" />
-    <option name="y" value="179" />
-    <option name="width" value="1390" />
+    <option name="x" value="67" />
+    <option name="y" value="-172" />
+    <option name="width" value="1380" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -252,7 +352,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,119 +371,35 @@
             <path>
               <item name="ksport" type="b2602c69:ProjectViewProjectNode" />
               <item name="ksport" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-base-module" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ksport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksport" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-base-module" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-config" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ksport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksport" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-base-module" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-config-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ksport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksport" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-base-module" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ksport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksport" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-base-module" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ksport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksport" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-base-module" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ksport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksport" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-base-module" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ksport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksport" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-base-module" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ksport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksport" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-base-module" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ksport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksport" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-base-module" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ksport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksport" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-base-module" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="killer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ksport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ksport" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-base-module" type="462c0819:PsiDirectoryNode" />
-              <item name="ksport-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="ksport-common" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AbsServiceConfig" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pig" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.killer.ksport.base.code.generator" />
+      <recent name="com.killer.ksport.common.core.db.fill.filter" />
+      <recent name="com.killer.ksport.common.core.db" />
+      <recent name="com" />
+      <recent name="com.killer.ksport.auth.conf" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/ksport-base-module/ksport-config/src/main/resources" />
       <recent name="$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources" />
@@ -398,21 +417,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KsportConfigApplication">
+  <component name="RunManager" selected="Application.CodeGenerator (1)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="KsportConfigApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="CodeGenerator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.*" />
+          <option name="PATTERN" value="com.killer.ksport.code.generator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.KsportConfigApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.killer.ksport.code.generator.CodeGenerator" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -421,17 +440,17 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ksport-config-server" />
+      <module name="ksport-code-generator" />
       <envs />
     </configuration>
-    <configuration name="KsportEurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.killer.ksport.eureka.*" />
+          <option name="PATTERN" value="com.killer.ksport.base.code.generator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.killer.ksport.eureka.KsportEurekaApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.killer.ksport.base.code.generator.CodeGenerator" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -440,7 +459,26 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ksport-eureka" />
+      <module name="ksport-code-generator" />
+      <envs />
+    </configuration>
+    <configuration name="KsportAuthApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.killer.ksport.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.killer.ksport.auth.KsportAuthApplication" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ksport-auth" />
       <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -456,6 +494,56 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="AppTest.testInsert (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ksport-common-core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com" />
+      <option name="MAIN_CLASS_NAME" value="com.AppTest" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="AppTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.killer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ksport-auth" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.killer" />
+      <option name="MAIN_CLASS_NAME" value="com.killer.AppTest" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -483,6 +571,12 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="KsportAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.killer.ksport.auth.KsportAuthApplication" />
+      <module name="ksport-auth" />
+      <envs />
     </configuration>
     <configuration name="KsportConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -529,16 +623,23 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="4">
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.KsportEurekaApplication" />
-      <item index="1" class="java.lang.String" itemvalue="Application.KsportEurekaApplication" />
-      <item index="2" class="java.lang.String" itemvalue="Application.KsportConfigApplication" />
-      <item index="3" class="java.lang.String" itemvalue="Spring Boot.KsportConfigApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.KsportConfigApplication" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.KsportAuthApplication" />
+      <item index="3" class="java.lang.String" itemvalue="Application.KsportAuthApplication" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.AppTest.testInsert" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.AppTest.testInsert (1)" />
+      <item index="6" class="java.lang.String" itemvalue="Application.CodeGenerator" />
+      <item index="7" class="java.lang.String" itemvalue="Application.CodeGenerator (1)" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.KsportConfigApplication" />
-        <item index="1" class="java.lang.String" itemvalue="Application.KsportEurekaApplication" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.CodeGenerator (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CodeGenerator" />
+        <item index="2" class="java.lang.String" itemvalue="Application.KsportAuthApplication" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AppTest.testInsert (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AppTest.testInsert" />
       </list>
     </recent_temporary>
   </component>
@@ -556,19 +657,65 @@
       <option name="presentableId" value="Default" />
       <updated>1561101797923</updated>
       <workItem from="1561101801630" duration="9894000" />
-      <workItem from="1561340327972" duration="5921000" />
+      <workItem from="1561340327972" duration="17289000" />
+      <workItem from="1561604695540" duration="12566000" />
+      <workItem from="1561683856625" duration="23777000" />
+      <workItem from="1561943374061" duration="18530000" />
+      <workItem from="1562031536855" duration="22223000" />
+      <workItem from="1562119582450" duration="8809000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="AppTest_testInsert - 2019.06.28 at 17h 15m 29s.xml">
+      <configuration name="AppTest.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testInsert - 2019.06.28 at 17h 16m 26s.xml">
+      <configuration name="AppTest.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testInsert - 2019.06.28 at 17h 27m 40s.xml">
+      <configuration name="AppTest.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testInsert - 2019.06.28 at 17h 30m 16s.xml">
+      <configuration name="AppTest.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testInsert - 2019.07.01 at 09h 34m 55s.xml">
+      <configuration name="AppTest.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testInsert - 2019.07.01 at 09h 36m 36s.xml">
+      <configuration name="AppTest.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testInsert - 2019.07.01 at 09h 37m 05s.xml">
+      <configuration name="AppTest.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testInsert - 2019.07.01 at 09h 37m 28s.xml">
+      <configuration name="AppTest.testInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testInsert_(1) - 2019.07.01 at 09h 38m 03s.xml">
+      <configuration name="AppTest.testInsert (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testInsert_(1) - 2019.07.01 at 09h 38m 20s.xml">
+      <configuration name="AppTest.testInsert (1)" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15815000" />
+    <option name="totallyTimeSpent" value="113088000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5030437" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982844" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -576,30 +723,68 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39935064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.4980631" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4969563" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3300866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25235197" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3300866" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26175982" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958494" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982844" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5030437" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982844" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958494" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982844" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39935064" sideWeight="0.4980631" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4969563" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982844" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3300866" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26175982" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -608,231 +793,430 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE-sources.jar!/org/springframework/security/access/intercept/aopalliance/MethodSecurityInterceptor.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE-sources.jar!/org/springframework/security/access/intercept/aspectj/AspectJMethodSecurityInterceptor.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="104" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/MultipleDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1342">
-          <caret line="61" column="11" lean-forward="false" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/java/com/killer/ksport/eureka/KsportEurekaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="286">
+          <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="false" />
+            <element signature="e#352#353#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources/application-peer2.yml">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.0.7.1/mybatis-plus-extension-3.0.7.1-sources.jar!/com/baomidou/mybatisplus/extension/plugins/SqlExplainInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="-161">
+          <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources/application-peer1.yml">
+    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-auth/src/test/java/com/killer/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources/application-peer3.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/1.5.2.RELEASE/spring-boot-dependencies-1.5.2.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-parent/1.5.2.RELEASE/spring-boot-starter-parent-1.5.2.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/1.5.9.RELEASE/spring-boot-dependencies-1.5.9.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.9.RELEASE/spring-boot-1.5.9.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/java/com/killer/ksport/eureka/KsportEurekaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="572">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources/application-peer1.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources/application-peer2.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources/application-peer3.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-parent/1.5.9.RELEASE/spring-boot-starter-parent-1.5.9.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-config/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-311">
-          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-config-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-config/config/test-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-config-server/src/main/java/com/KsportConfigApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-config-server/src/main/resources/application.yml">
+    <entry file="das://src:table:/f13d7e24/fa2cff41-8bcf-4023-b25e-4c4b54dca3a6/ksport.t_role">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="10" column="53" lean-forward="false" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/f13d7e24/fa2cff41-8bcf-4023-b25e-4c4b54dca3a6/ksport.t_role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/enums/LogicDeleteEnum.java" />
+    <entry file="jar://$USER_HOME$/software/jdk_1_8/src.zip!/org/omg/CORBA/SystemException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="72" column="14" lean-forward="false" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/util/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#288#289#0" expanded="false" />
+            <element signature="e#321#322#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/fill/filter/impl/CreateTimeFieldFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-annotation/3.0.7.1/mybatis-plus-annotation-3.0.7.1.jar!/com/baomidou/mybatisplus/annotation/FieldFill.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/fill/filter/impl/IsDeleteFieldFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.0.7.1/mybatis-plus-core-3.0.7.1-sources.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-155">
+          <caret line="140" column="42" lean-forward="false" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/fill/filter/FieldFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/fill/filter/impl/ModifyTimeFieldFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.0.7.1/mybatis-plus-core-3.0.7.1-sources.jar!/com/baomidou/mybatisplus/core/config/GlobalConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="142" column="23" lean-forward="false" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fa2cff41-8bcf-4023-b25e-4c4b54dca3a6/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/web/ResponseBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/config/GlobalMybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-241">
+          <caret line="57" column="41" lean-forward="false" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2429#2430#0" expanded="false" />
+            <element signature="e#2479#2480#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="96" column="29" lean-forward="false" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/fill/MyMetaObjectHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/java/com/killer/App.java" />
+    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="102" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/resources/templates/Controller.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/resources/templates/Service.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-generator/3.0.7.1/mybatis-plus-generator-3.0.7.1.jar!/com/baomidou/mybatisplus/generator/AutoGenerator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="133" column="25" lean-forward="false" selection-start-line="133" selection-start-column="25" selection-end-line="133" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.0.7.1/mybatis-plus-core-3.0.7.1-sources.jar!/com/baomidou/mybatisplus/core/toolkit/StringPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com.killer.ksport.common.core.db/mapping/user/TUserInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="46" lean-forward="true" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/view/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/user/controller/TUserInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/user/db/view/TUserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-generator/3.0.7.1/mybatis-plus-generator-3.0.7.1.jar!/com/baomidou/mybatisplus/generator/config/converts/MySqlTypeConvert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/mapper/TUserInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/baomidou/com/killer/ksport/common/core/db/dao/ksport/TUserInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/dao/ksport/TUserInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/config/KsportMybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2123#2124#0" expanded="false" />
+            <element signature="e#2185#2186#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/view/ksport/TUserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-generator/3.0.7.1/mybatis-plus-generator-3.0.7.1.jar!/com/baomidou/mybatisplus/generator/config/StrategyConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="92" column="26" lean-forward="false" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/mapping/ksport/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-code-generator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/resources/templates/Mapper.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-auth/src/main/java/com/killer/ksport/auth/KsportAuthApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/software/jdk_1_8/src.zip!/java/time/LocalDateTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="134" column="19" lean-forward="false" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/java/com/killer/ksport/code/generator/CodeGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1342">
+          <caret line="82" column="32" lean-forward="false" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4462#4600#0" expanded="true" />
+            <element signature="e#4599#4600#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/software/jdk_1_8/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2068">
+          <caret line="130" column="13" lean-forward="false" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/view/ksport/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="95" column="46" lean-forward="true" selection-start-line="95" selection-start-column="46" selection-end-line="95" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/resources/templates/Mapper.xml.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-base-module/ksport-code-generator/src/main/resources/templates/Entity.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="70" column="30" lean-forward="false" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/mapping/ksport/UserInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/dao/ksport/UserInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ksport-common/ksport-common-core/src/main/java/com/killer/ksport/common/core/db/view/ksport/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1727">
+          <caret line="115" column="16" lean-forward="false" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
           <folding />
         </state>
       </provider>

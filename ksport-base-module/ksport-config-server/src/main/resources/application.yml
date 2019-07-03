@@ -8,4 +8,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/KillerLu/ksport.git
+          uri: https://github.com/KillerLu/spring-cloud-config.git
+          search-paths: ksport

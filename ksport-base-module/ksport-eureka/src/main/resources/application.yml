@@ -4,4 +4,4 @@ spring:
     name: ksport-eureka
   profiles:
     # 主要激活哪个配置文件
-    active: peer3
+    active: peer1
