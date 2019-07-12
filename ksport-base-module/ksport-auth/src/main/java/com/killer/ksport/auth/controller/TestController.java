@@ -5,7 +5,9 @@ import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.killer.ksport.common.core.db.dao.ksport.RoleDao;
+import com.killer.ksport.common.core.db.dao.ksport.UserAccountDao;
 import com.killer.ksport.common.core.db.view.ksport.Role;
+import com.killer.ksport.common.core.db.view.ksport.UserAccount;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,6 +30,8 @@ public class TestController {
 
     @Autowired
     private RoleDao roleDao;
+    @Autowired
+    private UserAccountDao userAccountDao;
 
     @RequestMapping("/insert")
     public String insert(){
@@ -115,9 +119,9 @@ public class TestController {
     }
 
     @RequestMapping("/wrapperSelect")
-    public IPage<Role> wrapperSelect(){
-        return roleDao.selectPage(new Page<Role>(1, 3), new QueryWrapper<Role>()
-                .eq("remark", "管理员").orderByDesc("id"));
+    public IPage<UserAccount> wrapperSelect(){
+        return userAccountDao.selectPage(new Page<UserAccount>(1, 3), new QueryWrapper<UserAccount>()
+                .eq("userId", 1));
     }
 
     @RequestMapping("/wrapperUpdate")

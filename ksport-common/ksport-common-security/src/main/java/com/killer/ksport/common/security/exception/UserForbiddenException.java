@@ -1,0 +1,23 @@
+package com.killer.ksport.common.security.exception;
+
+import com.killer.ksport.common.core.constant.ExceptionCodeConstant;
+import com.killer.ksport.common.core.exception.CommonException;
+
+/**
+ * @author ：Killer
+ * @date ：Created in 19-7-4 下午5:44
+ * @description：${description}
+ * @modified By：
+ * @version: version
+ */
+public class UserForbiddenException extends CommonException{
+
+    public UserForbiddenException(String message) {
+        super(message, ExceptionCodeConstant.EX_USER_FORBIDDEN_CODE);
+    }
+
+    public UserForbiddenException() {
+        this("该用户已被禁用");
+    }
+
+}

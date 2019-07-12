@@ -14,6 +14,7 @@
     <modules>
         <module>ksport-common-core</module>
         <module>ksport-common-security</module>
+        <module>ksport-feign-api</module>
     </modules>
 
 

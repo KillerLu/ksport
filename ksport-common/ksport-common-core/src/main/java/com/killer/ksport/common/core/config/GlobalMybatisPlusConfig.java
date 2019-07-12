@@ -41,8 +41,8 @@ public class GlobalMybatisPlusConfig {
         dbConfig.setTablePrefix("t_");
         // 字段策略 IGNORED:"忽略判断",NOT_NULL:"非 NULL 判断"),NOT_EMPTY:"非空判断"
         dbConfig.setFieldStrategy(FieldStrategy.NOT_NULL);
-//        // 数据库大写下划线转换(本身已经是默认配置)
-//        dbConfig.setCapitalMode(true);
+//        // 数据库大写下划线转换
+        dbConfig.setCapitalMode(true);
 //        // 逻辑删除配置
         dbConfig.setLogicDeleteValue("true");
         dbConfig.setLogicNotDeleteValue("false");

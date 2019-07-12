@@ -4,7 +4,7 @@ eureka:
     service-url:
       defaultZone: http://eureka-9001:9001/eureka,http://eureka-9002:9002/eureka
     # 不在页面上显示当前 服务
-    register-with-eureka: true
+    register-with-eureka: false
     # 为true时，可以启动，但报异常：Cannot execute request on any known server
     fetch-registry: false
   instance: # eureak实例定义

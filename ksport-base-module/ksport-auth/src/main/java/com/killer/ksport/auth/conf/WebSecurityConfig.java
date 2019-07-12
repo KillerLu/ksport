@@ -2,8 +2,7 @@ package com.killer.ksport.auth.conf;
 
 
 
-import com.killer.ksport.auth.filter.JWTAuthenticationFilter;
-import org.springframework.context.annotation.Bean;
+import com.killer.ksport.common.security.filter.JWTAuthenticationFilter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -44,6 +43,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
          * 通过添加过滤器将 token 解析，将用户所有的权限写入本次 Spring Security 的会话
          */
         http
-                .addFilterBefore((new JWTAuthenticationFilter(authenticationManager())), UsernamePasswordAuthenticationFilter.class);
+                .addFilterBefore((new JWTAuthenticationFilter()), UsernamePasswordAuthenticationFilter.class);
     }
 }

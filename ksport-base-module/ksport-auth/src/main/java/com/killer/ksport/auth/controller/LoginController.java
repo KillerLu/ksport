@@ -1,8 +1,15 @@
 package com.killer.ksport.auth.controller;
 
-import com.killer.ksport.auth.model.view.LoginUser;
+import com.alibaba.fastjson.JSONObject;
+import com.killer.ksport.auth.service.ILoginService;
+import com.killer.ksport.common.core.constant.RedisKeyConstant;
+import com.killer.ksport.common.core.service.IRedisService;
+import com.killer.ksport.common.security.exception.PasswordIncorrectException;
+import com.killer.ksport.common.security.exception.UserForbiddenException;
+import com.killer.ksport.common.security.exception.UserInvalidException;
+import com.killer.ksport.common.security.model.view.LoginUser;
+import com.killer.ksport.common.core.controller.BaseController;
 import com.killer.ksport.common.security.vo.RequestLoginUser;
-import com.killer.ksport.auth.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.killer.ksport.common.core.web.ResponseBuilder;
 
 import javax.validation.Valid;
+import java.util.Map;
 
 /**
  * @author ：Killer
@@ -21,37 +29,32 @@ import javax.validation.Valid;
  */
 @RestController
 @RequestMapping("/")
-public class LoginController {
+public class LoginController extends BaseController {
 
     @Autowired
-    private LoginService loginService;
+    private ILoginService loginService;
+    @Autowired
+    private IRedisService redisService;
 
-    @RequestMapping(value = "/login",method = RequestMethod.POST)
-    public Object login(@Valid RequestLoginUser requestLoginUser, BindingResult bindingResult){
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public Object login(@Valid RequestLoginUser requestLoginUser, BindingResult bindingResult) {
         // 检查有没有输入用户名密码和格式对不对
-        if (bindingResult.hasErrors()){
-            //TODO
+        Map<String, String> fieldErrorMap = getErrors(bindingResult);
+        if (fieldErrorMap.size() > 0) {
+            return new ResponseBuilder().error().message(getErrorsString(bindingResult)).add("fields", fieldErrorMap).build();
         }
 
-        LoginUser loginUser = loginService.getLoginUser(requestLoginUser.getAccount(),requestLoginUser.getPassword());
+        LoginUser loginUser = loginService.getLoginUser(requestLoginUser.getAccount(), requestLoginUser.getPassword());
         if (loginUser == null) {
-            //TODO
+            throw new UserInvalidException();
+        }
+        if (!loginUser.isEnable()) {
+            throw new UserForbiddenException();
         }
         String token = loginService.generateToken(loginUser);
+        //将用户信息缓存
+        redisService.hSet(RedisKeyConstant.USER_DETAILS, loginUser.getUserId()+"", JSONObject.toJSONString(loginUser));
         return new ResponseBuilder().success().data(loginUser).add("token", token).build();
     }
 
-//    private ResultMap checkAccount(RequestLoginUser requestLoginUser, LoginDetail loginDetail){
-//        if (loginDetail == null){
-//            return new ResultMap().fail("434").message("账号不存在！").data("");
-//        }else {
-//            if (loginDetail.enable() == false){
-//                return new ResultMap().fail("452").message("账号在黑名单中").data("");
-//            }
-//            if (!loginDetail.getPassword().equals(requestLoginUser.getPassword())){
-//                return new ResultMap().fail("438").message("密码错误！").data("");
-//            }
-//        }
-//        return null;
-//    }
 }

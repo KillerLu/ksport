@@ -42,8 +42,12 @@ public class $!{entity} extends Model<$!{entity}> {
 #if($!{field.keyFlag})
     @TableId
 #end
+## 状态
+#if($!{field.name} == "status")
+    @TableField(fill = FieldFill.INSERT)
+#end
 ## 逻辑删除
-#if($!{field.name} == "isDelete")
+#if($!{field.name} == "deleted")
     @TableField(fill = FieldFill.INSERT)
 #end
 ## 创建时间
@@ -55,7 +59,7 @@ public class $!{entity} extends Model<$!{entity}> {
     @TableField(fill = FieldFill.INSERT_UPDATE)
 #end
 ## 逻辑删除
-#if($!{field.name} == "isDelete")
+#if($!{field.name} == "deleted")
     @TableLogic
 #end
 #if($!{field.propertyType} == "LocalDateTime")

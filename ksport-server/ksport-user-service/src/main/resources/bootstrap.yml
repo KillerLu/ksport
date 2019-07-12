@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: ksport-user
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    pool:
+      max-active: 100
+      max-idle: 10
+      max-wait: 100000
+    timeout: 0
+
+eureka:
+  instance:
+    hostname: ksport-user #服务注册中心实例的主机名
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}} # 在信息列表时显示的主机名称
+    prefer-ip-address: true     # 访问的路径变为IP地址(即左下角显示的信息是显示ip地址)
+  client:
+    serviceUrl:
+          defaultZone: http://eureka-9001:9001/eureka,http://eureka-9002:9002/eureka,http://eureka-9003:9003/eureka  #服务注册中心的配置内容，指定服务注册中心的位置

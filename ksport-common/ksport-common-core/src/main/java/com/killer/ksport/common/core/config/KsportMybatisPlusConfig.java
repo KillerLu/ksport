@@ -36,8 +36,9 @@ import java.util.List;
  * @version: version
  */
 @Configuration
-@MapperScan(basePackages = {"com.killer.ksport.common.core.db.dao.ksport"})
-@EnableTransactionManagement
+@MapperScan(basePackages = {"com.killer.ksport.common.core.db.dao.ksport",
+                            "com.killer.ksport.user.db.dao"})
+@EnableTransactionManagement(proxyTargetClass = true)
 public class KsportMybatisPlusConfig {
 
 
@@ -64,7 +65,7 @@ public class KsportMybatisPlusConfig {
         //设置数据源
         bean.setDataSource(dataSource);
         //设置mapper扫描路径
-        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath*:com/killer/ksport/common/core/db/mapping/ksport/*.xml"));
+        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath*:com/killer/ksport/**/*.xml"));
         //设置全局配置
         bean.setGlobalConfig(globalConfig);
         bean.setPlugins(new Interceptor[]{

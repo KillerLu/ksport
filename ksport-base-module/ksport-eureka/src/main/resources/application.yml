@@ -1,4 +1,5 @@
 # 服务名 ，很重要 ，后期 config 配置中心会以 服务名为标识找对应的 服务
+#启动命令:java -jar -Dspring.profiles.active=peer1 ksport-eureka-1.0-SNAPSHOT.jar&
 spring:
   application:
     name: ksport-eureka

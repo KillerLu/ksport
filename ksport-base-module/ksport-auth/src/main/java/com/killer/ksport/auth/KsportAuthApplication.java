@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.cloud.client.SpringCloudApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 /**
@@ -14,8 +16,10 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
  * @modified By：
  * @version: version
  */
-@SpringBootApplication(exclude= {DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class},scanBasePackages={"com.killer.ksport.*"})
+@SpringBootApplication(scanBasePackages={"com.killer.ksport.*"})
 @EnableWebSecurity
+@EnableFeignClients(basePackages={"com.killer.ksport.*"})
+@EnableDiscoveryClient
 public class KsportAuthApplication {
 
     public static void main(String[] args) {

@@ -52,9 +52,11 @@ public class UserInfo extends Model<UserInfo> {
      */
     private String avatar;
     /**
-     * 1：正常 2:已删除
+     * 0：未删除 1:已删除
      */
-    private String isDelete;
+    @TableField(fill = FieldFill.INSERT)
+    @TableLogic
+    private Boolean deleted;
     /**
      * 创建时间
      */
@@ -113,11 +115,11 @@ public class UserInfo extends Model<UserInfo> {
     }
 
 
-    public void setIsDelete(String isDelete) {
-        this.isDelete = isDelete;
+    public void setDeleted(Boolean deleted) {
+        this.deleted = deleted;
     }
-    public String getIsDelete() {
-        return this.isDelete;
+    public Boolean isDeleted() {
+        return this.deleted;
     }
 
 

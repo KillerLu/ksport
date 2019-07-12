@@ -3,8 +3,9 @@ package com.killer.ksport.common.core.db.fill;
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import com.killer.ksport.common.core.db.fill.filter.FieldFilter;
 import com.killer.ksport.common.core.db.fill.filter.impl.CreateTimeFieldFilter;
-import com.killer.ksport.common.core.db.fill.filter.impl.IsDeleteFieldFilter;
+import com.killer.ksport.common.core.db.fill.filter.impl.DeletedFieldFilter;
 import com.killer.ksport.common.core.db.fill.filter.impl.ModifyTimeFieldFilter;
+import com.killer.ksport.common.core.db.fill.filter.impl.StatusFieldFilter;
 import org.apache.ibatis.reflection.MetaObject;
 
 import java.util.ArrayList;
@@ -21,9 +22,10 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
     @Override
     public void insertFill(MetaObject metaObject) {
         List<FieldFilter> fillers = new ArrayList<FieldFilter>();
-        fillers.add(new IsDeleteFieldFilter());
+        fillers.add(new DeletedFieldFilter());
         fillers.add(new CreateTimeFieldFilter());
         fillers.add(new ModifyTimeFieldFilter());
+        fillers.add(new StatusFieldFilter());
         for (FieldFilter filler : fillers) {
             filler.doFiller(this, metaObject);
         }

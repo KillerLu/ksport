@@ -10,5 +10,8 @@
     <file url="file://$PROJECT_DIR$/ksport-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-common/ksport-common-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-common/ksport-common-security" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ksport-common/ksport-feign-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ksport-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ksport-server/ksport-user-service" charset="UTF-8" />
   </component>
 </project>

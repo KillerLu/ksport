@@ -1,35 +1,57 @@
 package com.killer.ksport.common.core.db.view.ksport;
 
 import com.baomidou.mybatisplus.annotation.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 
 import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author ：Killer
- * @date ：Created in 19-6-28 上午9:23
- * @description：${description}
- * @modified By：
- * @version: version
+ * 角色表
+ *
+ * @author killer
+ * @date 2019-07-09
  */
+@TableName("t_role")
 public class Role extends Model<Role> {
 
+    private static final long serialVersionUID = 1L;
+
+
+    //重写这个方法，return当前类的主键
+    @Override
+    protected Serializable pkVal() {
+        return id;
+    }
+
+
+    /**
+     * 主键id
+     */
+    @TableId
     private Long id;
-
+    /**
+     * 角色名称
+     */
     private String name;
-
+    /**
+     * 角色备注
+     */
     private String remark;
-
-    //若没有开启驼峰命名，或者表中列名不符合驼峰规则，可通过该注解指定数据库表中的列名，exist标明数据表中有没有对应列
+    /**
+     * 0:未删除 1:已删除
+     */
     @TableField(fill = FieldFill.INSERT)
-    @TableLogic //标记逻辑删除属性
-    private Boolean isDelete;
-
-    @TableField(fill = FieldFill.INSERT)
+    @TableLogic
+    private Boolean deleted;
+    /**
+     * 创建时间
+     */
     private Date createTime;
-
-    @TableField(fill = FieldFill.INSERT_UPDATE)
+    /**
+     * 修改时间
+     */
     private Date modifyTime;
 
     public Role(){
@@ -40,63 +62,51 @@ public class Role extends Model<Role> {
         this.name = name;
     }
 
-    public Long getId() {
-        return id;
-    }
-
     public void setId(Long id) {
         this.id = id;
     }
-
-    public String getName() {
-        return name;
+    public Long getId() {
+        return this.id;
     }
+
 
     public void setName(String name) {
         this.name = name;
     }
-
-    public String getRemark() {
-        return remark;
+    public String getName() {
+        return this.name;
     }
+
 
     public void setRemark(String remark) {
         this.remark = remark;
     }
-
-    public Boolean isDelete() {
-        return isDelete;
+    public String getRemark() {
+        return this.remark;
     }
 
-    public void setDelete(Boolean isDelete) {
-        this.isDelete = isDelete;
+
+    public void setDeleted(Boolean deleted) {
+        this.deleted = deleted;
+    }
+    public Boolean isDeleted() {
+        return this.deleted;
     }
 
-    public Date getCreateTime() {
-        return createTime;
-    }
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
-
-    public Date getModifyTime() {
-        return modifyTime;
+    public Date getCreateTime() {
+        return this.createTime;
     }
+
 
     public void setModifyTime(Date modifyTime) {
         this.modifyTime = modifyTime;
     }
-
-    @Override
-    public String toString() {
-        return "Role{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", remark='" + remark + '\'' +
-                ", isDelete='" + isDelete + '\'' +
-                ", createTime=" + createTime +
-                ", modifyTime=" + modifyTime +
-                '}';
+    public Date getModifyTime() {
+        return this.modifyTime;
     }
+
 }
