@@ -1,4 +1,4 @@
-package com.killer.ksport.user.db.dao;
+package com.killer.ksport.user.db.dao.ksport;
 
 import com.killer.ksport.common.core.db.dao.ksport.PermissionDao;
 import com.killer.ksport.common.core.db.view.ksport.Permission;

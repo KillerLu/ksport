@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.killer.ksport.user.db.dao.RoleDaoExt" >
+<mapper namespace="com.killer.ksport.user.db.dao.ksport.RoleDaoExt" >
 
     <select id="listRoleByUser" resultType="com.killer.ksport.common.core.db.view.ksport.Role">
         select id,name,remark from t_role r where r.deleted=0

@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/ksport-base-module/ksport-config-server/ksport-config-server.iml" filepath="$PROJECT_DIR$/ksport-base-module/ksport-config-server/ksport-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka/ksport-eureka.iml" filepath="$PROJECT_DIR$/ksport-base-module/ksport-eureka/ksport-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-common/ksport-feign-api/ksport-feign-api.iml" filepath="$PROJECT_DIR$/ksport-common/ksport-feign-api/ksport-feign-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksport-base-module/ksport-quartz/ksport-quartz.iml" filepath="$PROJECT_DIR$/ksport-base-module/ksport-quartz/ksport-quartz.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-server/ksport-server.iml" filepath="$PROJECT_DIR$/ksport-server/ksport-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-server/ksport-user-service/ksport-user-service.iml" filepath="$PROJECT_DIR$/ksport-server/ksport-user-service/ksport-user-service.iml" />
     </modules>

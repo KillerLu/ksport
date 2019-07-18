@@ -1,26 +1,18 @@
 package com.killer.ksport.user.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
-import com.killer.ksport.common.core.db.dao.ksport.RoleDao;
-import com.killer.ksport.common.core.db.dao.ksport.UserInfoDao;
 import com.killer.ksport.common.core.db.dao.ksport.UserRoleDao;
 import com.killer.ksport.common.core.db.view.ksport.Role;
-import com.killer.ksport.common.core.db.view.ksport.UserInfo;
 import com.killer.ksport.common.core.db.view.ksport.UserRole;
-import com.killer.ksport.common.core.exception.CommonException;
 import com.killer.ksport.common.core.service.impl.BaseService;
-import com.killer.ksport.common.core.util.CloneUtils;
-import com.killer.ksport.user.db.dao.RoleDaoExt;
+import com.killer.ksport.user.db.dao.ksport.RoleDaoExt;
 import com.killer.ksport.user.service.IRoleService;
-import com.killer.ksport.user.vo.RoleVo;
 import com.killer.ksport.user.vo.UserRoleVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

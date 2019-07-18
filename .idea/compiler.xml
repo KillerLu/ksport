@@ -13,6 +13,7 @@
         <module name="ksport-config-server" />
         <module name="ksport-eureka" />
         <module name="ksport-feign-api" />
+        <module name="ksport-quartz" />
         <module name="ksport-user-service" />
         <module name="ksportbasemodule" />
       </profile>
@@ -29,6 +30,7 @@
       <module name="ksport-config-server" target="1.8" />
       <module name="ksport-eureka" target="1.8" />
       <module name="ksport-feign-api" target="1.8" />
+      <module name="ksport-quartz" target="1.8" />
       <module name="ksport-server" target="1.8" />
       <module name="ksport-user-service" target="1.8" />
       <module name="ksportbasemodule" target="1.5" />

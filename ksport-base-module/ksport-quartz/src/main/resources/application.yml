@@ -1,0 +1,9 @@
+server:
+  port: 9030
+quartz:
+  #配置数据源
+  datasource:
+    url: jdbc:mysql://localhost:3306/quartz?characterEncoding=utf8&allowMultiQueries=true&useSSL=false
+    user: killer
+    password: leekawah123
+    driver-class-name: com.mysql.jdbc.Driver

@@ -1,19 +1,13 @@
 package com.killer.ksport.user.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.killer.ksport.common.core.db.dao.ksport.ModuleDao;
-import com.killer.ksport.common.core.db.dao.ksport.PermissionDao;
 import com.killer.ksport.common.core.db.dao.ksport.RolePermissionDao;
-import com.killer.ksport.common.core.db.dao.ksport.UserInfoDao;
 import com.killer.ksport.common.core.db.view.ksport.*;
-import com.killer.ksport.common.core.exception.CommonException;
 import com.killer.ksport.common.core.service.impl.BaseService;
 import com.killer.ksport.common.core.util.CloneUtils;
-import com.killer.ksport.user.db.dao.PermissionDaoExt;
+import com.killer.ksport.user.db.dao.ksport.PermissionDaoExt;
 import com.killer.ksport.user.service.IModuleService;
-import com.killer.ksport.user.service.IUserService;
-import com.killer.ksport.user.vo.ModuleVo;
 import com.killer.ksport.user.vo.PermissionVo;
 import com.killer.ksport.user.vo.RolePermissionVo;
 import org.springframework.beans.factory.annotation.Autowired;

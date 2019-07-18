@@ -25,7 +25,7 @@ import java.util.Map;
 public class BaseController {
 
 
-    private final static Logger logger = LoggerFactory.getLogger(BaseController.class);
+    protected final static Logger logger = LoggerFactory.getLogger(BaseController.class);
 
     // 自定义类型转换器
     @InitBinder

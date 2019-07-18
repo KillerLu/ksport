@@ -30,7 +30,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .authorizeRequests()
                 .antMatchers("/login").permitAll()//登录接口不需要token
-                .anyRequest().authenticated()       // 需携带有效 token
+                .anyRequest().permitAll()       // 需携带有效 token
                 .and()
                 .csrf()
                 .disable()                      // 禁用 Spring Security 自带的跨域处理

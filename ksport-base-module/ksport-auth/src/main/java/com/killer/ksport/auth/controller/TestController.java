@@ -56,7 +56,7 @@ public class TestController {
 
     @RequestMapping("/selectById")
     public Role selectById(){
-        return roleDao.selectById(20l);
+        return roleDao.selectById(1l);
     }
 
     @RequestMapping("/select")

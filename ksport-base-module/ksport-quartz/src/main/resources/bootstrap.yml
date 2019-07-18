@@ -1,0 +1,22 @@
+#spring:
+#  cloud:
+#    config:
+#      uri: http://localhost:9010
+#      profile: dev
+#      label: master #当 ConfigServer 的后端存储的是 Git 的时候，默认就是 master
+#  application:
+#    name: ksport-auth
+spring:
+  application:
+    name: ksport-quartz
+eureka:
+  instance:
+    hostname: ksport-quartz #服务注册中心实例的主机名
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}} # 在信息列表时显示的主机名称
+    prefer-ip-address: true     # 访问的路径变为IP地址(即左下角显示的信息是显示ip地址)
+  client:
+    serviceUrl:
+          defaultZone: http://eureka-9001:9001/eureka,http://eureka-9002:9002/eureka,http://eureka-9003:9003/eureka  #服务注册中心的配置内容，指定服务注册中心的位置
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000 

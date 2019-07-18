@@ -16,6 +16,7 @@
         <module>ksport-config-server</module>
         <module>ksport-auth</module>
         <module>ksport-code-generator</module>
+        <module>ksport-quartz</module>
     </modules>
 
 

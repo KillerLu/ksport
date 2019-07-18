@@ -43,7 +43,7 @@ public class CodeGenerator {
         AutoGenerator mpg = new AutoGenerator();
         // 选择 freemarker 引擎，默认 Veloctiy
         // mpg.setTemplateEngine(new FreemarkerTemplateEngine());
-
+        String database=scanner("数据库");
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         //返回  /home/user/IdeaProjects/ksport
@@ -71,7 +71,7 @@ public class CodeGenerator {
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("killer");
         dsc.setPassword("leekawah123");
-        dsc.setUrl("jdbc:mysql://localhost:3306/ksport?characterEncoding=utf8&allowMultiQueries=true&useSSL=false");
+        dsc.setUrl("jdbc:mysql://localhost:3306/"+database+"?characterEncoding=utf8&allowMultiQueries=true&useSSL=false");
         mpg.setDataSource(dsc);
 
         // 策略配置
@@ -106,9 +106,9 @@ public class CodeGenerator {
         // 包配置
         PackageConfig pc = new PackageConfig();
         pc.setParent("com.killer.ksport.common.core.db");
-        pc.setEntity("view.ksport");
-        pc.setMapper("dao.ksport");
-        pc.setXml("mapping.ksport");
+        pc.setEntity("view."+database);
+        pc.setMapper("dao."+database);
+        pc.setXml("mapping."+database);
         mpg.setPackageInfo(pc);
 
         // 自定义配置
