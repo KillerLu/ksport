@@ -12,6 +12,7 @@
         <module>ksport-base-module</module>
         <module>ksport-common</module>
         <module>ksport-server</module>
+        <module>ksport-message-center</module>
     </modules>
 
     <name>mengma-sc-demo</name>

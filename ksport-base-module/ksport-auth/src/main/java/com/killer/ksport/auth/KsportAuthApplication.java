@@ -1,6 +1,5 @@
 package com.killer.ksport.auth;
 
-import com.killer.ksport.common.core.config.MybatisPlusConfig;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

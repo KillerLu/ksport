@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/ksport-common/ksport-common-core/pom.xml" />
+        <option value="$PROJECT_DIR$/ksport-message-center/ksport-websocket-server/pom.xml" />
       </list>
     </option>
   </component>

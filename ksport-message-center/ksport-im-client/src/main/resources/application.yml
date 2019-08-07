@@ -1,0 +1,3 @@
+#scp -r AbsProjectManagementService-1.0-SNAPSHOT.jar absuser@192.168.1.82:/app/abs_services/abs_project_management/
+server:
+  port: 9062

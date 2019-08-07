@@ -9,6 +9,9 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.ServletRequestDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -34,13 +37,11 @@ public class BaseController {
                 new CustomDateEditor(new SimpleDateFormat("yyyy-MM-dd"), true));
     }
 
-    public Map<String, String> getErrors(BindingResult result)
-    {
+    public Map<String, String> getErrors(BindingResult result) {
         Map<String, String> map = new HashMap<>();
         List<FieldError> list = result.getFieldErrors();
         if (CollectionUtils.isNotEmpty(list)) {
-            for (FieldError error : list)
-            {
+            for (FieldError error : list) {
                 logger.error("error.getField():" + error.getField());
                 logger.error("error.getDefaultMessage():" + error.getDefaultMessage());
                 map.put(error.getField(), error.getDefaultMessage());
@@ -50,19 +51,30 @@ public class BaseController {
         return map;
     }
 
-    public String getErrorsString(BindingResult result)
-    {
+    public String getErrorsString(BindingResult result) {
         StringBuilder stringBuilder = new StringBuilder();
         List<FieldError> list = result.getFieldErrors();
-        if (CollectionUtils.isNotEmpty(list))
-        {
-            for (FieldError error : list)
-            {
+        if (CollectionUtils.isNotEmpty(list)) {
+            for (FieldError error : list) {
                 stringBuilder.append(error.getField() + ": " + error.getDefaultMessage() + ";");
             }
             return stringBuilder.toString();
         }
 
         return null;
+    }
+
+    protected void wrapDownloadHttpResponse(String displayFilename, HttpServletResponse response) {
+        response.addHeader("Cache-Control", "no-cache");
+        response.addHeader("Access-Control-Expose-Headers", "Content-Disposition");
+        response.addDateHeader("Expires", 0);
+
+        String suffix = displayFilename.substring(displayFilename.lastIndexOf(".") + 1);
+        response.setContentType("multipart/form-data;charset=UTF-8");
+        try {
+            response.addHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode(displayFilename, "UTF-8"));
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
     }
 }

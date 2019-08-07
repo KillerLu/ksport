@@ -1,0 +1,16 @@
+#scp -r AbsProjectManagementService-1.0-SNAPSHOT.jar absuser@192.168.1.82:/app/abs_services/abs_project_management/
+server:
+  port: 9070
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+
+
+#  spring.rabbitmq.host=localhost
+#  spring.rabbitmq.port=5672
+#  spring.rabbitmq.username=admin
+#  spring.rabbitmq.password=admin

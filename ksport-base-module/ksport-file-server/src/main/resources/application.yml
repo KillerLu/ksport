@@ -1,0 +1,13 @@
+server:
+  port: 9040
+ftp:
+  host: localhost
+  port: 21
+  userName: ftpuser
+  password: leekawah123
+ksport:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ksport?characterEncoding=utf8&allowMultiQueries=true&useSSL=false
+    user: killer
+    password: leekawah123
+    driver-class-name: com.mysql.jdbc.Driver

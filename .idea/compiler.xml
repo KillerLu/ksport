@@ -13,9 +13,15 @@
         <module name="ksport-config-server" />
         <module name="ksport-eureka" />
         <module name="ksport-feign-api" />
+        <module name="ksport-file-server" />
+        <module name="ksport-im-client" />
+        <module name="ksport-im-server" />
+        <module name="ksport-message-common" />
+        <module name="ksport-mq-server" />
         <module name="ksport-quartz" />
         <module name="ksport-user-service" />
         <module name="ksportbasemodule" />
+        <module name="netty-learn" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -30,10 +36,20 @@
       <module name="ksport-config-server" target="1.8" />
       <module name="ksport-eureka" target="1.8" />
       <module name="ksport-feign-api" target="1.8" />
+      <module name="ksport-file-server" target="1.8" />
+      <module name="ksport-im-client" target="1.8" />
+      <module name="ksport-im-server" target="1.8" />
+      <module name="ksport-message-center" target="1.8" />
+      <module name="ksport-message-common" target="1.8" />
+      <module name="ksport-mq-server" target="1.8" />
       <module name="ksport-quartz" target="1.8" />
       <module name="ksport-server" target="1.8" />
       <module name="ksport-user-service" target="1.8" />
+      <module name="ksport-websocket-client" target="1.8" />
+      <module name="ksport-websocket-server" target="1.8" />
       <module name="ksportbasemodule" target="1.5" />
+      <module name="ksportwebsocketserver" target="1.8" />
+      <module name="netty-learn" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
