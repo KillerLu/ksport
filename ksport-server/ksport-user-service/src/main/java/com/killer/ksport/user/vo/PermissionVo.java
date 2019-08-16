@@ -13,6 +13,9 @@ import io.swagger.annotations.ApiModelProperty;
 @ApiModel("权限")
 public class PermissionVo {
 
+    @ApiModelProperty("权限id")
+    private Long id;
+
     @ApiModelProperty("模块id")
     private Long moduleId;
 
@@ -21,6 +24,14 @@ public class PermissionVo {
 
     @ApiModelProperty("权限code")
     private String code;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public Long getModuleId() {
         return moduleId;

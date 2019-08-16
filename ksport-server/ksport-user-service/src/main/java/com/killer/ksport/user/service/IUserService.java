@@ -1,10 +1,12 @@
 package com.killer.ksport.user.service;
 
+import com.killer.ksport.common.core.db.view.ksport.UserAccount;
 import com.killer.ksport.common.core.db.view.ksport.UserInfo;
 import com.killer.ksport.common.core.service.IBaseService;
-import com.killer.ksport.common.security.model.view.LoginUser;
 import com.killer.ksport.user.vo.UserAccountVo;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 /**
  * @author ：Killer
@@ -22,10 +24,43 @@ public interface IUserService extends IBaseService<UserInfo> {
     void saveUserAccount(UserAccountVo userAccountVo);
 
     /**
-     * 获取登录用户信息
-     * @param account
-     * @param password
+     * 查询用户信息列表
+     * @param page
+     * @param pageLength
      * @return
      */
-    LoginUser getLoginUser(String account, String password);
+    List<UserAccountVo> listUser(Integer page, Integer pageLength);
+
+    /**
+     * 根据用户id查询用户账号
+     * @param userId
+     * @return
+     */
+    UserAccount getUserAccountByUserId(Long userId);
+
+    /**
+     * 更新用户信息
+     */
+    void updateUser(UserAccountVo userAccountVo);
+
+    /**
+     * 删除用户
+     * @param id
+     */
+    void deleteUser(Long id);
+
+    /**
+     * 根据用户名查询用户
+     * @param account
+     * @return
+     */
+    UserAccount getUserAccountByAccount(String account);
+
+//    /**
+//     * 获取登录用户信息
+//     * @param account
+//     * @param password
+//     * @return
+//     */
+//    LoginUser getLoginUser(String account, String password);
 }

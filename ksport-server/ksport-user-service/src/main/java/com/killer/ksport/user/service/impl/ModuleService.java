@@ -1,11 +1,14 @@
 package com.killer.ksport.user.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.killer.ksport.common.core.db.dao.ksport.ModuleDao;
 import com.killer.ksport.common.core.db.dao.ksport.RolePermissionDao;
 import com.killer.ksport.common.core.db.view.ksport.*;
 import com.killer.ksport.common.core.service.impl.BaseService;
-import com.killer.ksport.common.core.util.CloneUtils;
+import com.killer.ksport.common.core.util.CloneUtil;
 import com.killer.ksport.user.db.dao.ksport.PermissionDaoExt;
 import com.killer.ksport.user.service.IModuleService;
 import com.killer.ksport.user.vo.PermissionVo;
@@ -35,7 +38,7 @@ public class ModuleService extends BaseService<ModuleDao,Module> implements IMod
     @Transactional
     @Override
     public void savePermission(PermissionVo permissionVo) {
-        Permission permission = CloneUtils.clone(permissionVo, Permission.class);
+        Permission permission = CloneUtil.clone(permissionVo, Permission.class);
         permissionDaoExt.insert(permission);
     }
 
@@ -60,4 +63,56 @@ public class ModuleService extends BaseService<ModuleDao,Module> implements IMod
     public List<Permission> listPermissionByUser(Long userId) {
         return permissionDaoExt.listPermissionByUser(userId);
     }
+
+    @Override
+    public void deleteRolePermissionByRoleId(Long roleId) {
+        rolePermissionDao.delete(new UpdateWrapper<RolePermission>().eq("role_id", roleId));
+    }
+
+    @Transactional
+    @Override
+    public void deleteModule(Long id) {
+        //1.删除该模块
+        baseMapper.deleteById(id);
+        //2.查询该模块下的所有权限
+        List<Permission> permissions=permissionDaoExt.selectList(new QueryWrapper<Permission>().eq("module_id", id));
+        //3.删除该模块下所有权限
+        permissionDaoExt.delete(new UpdateWrapper<Permission>().eq("module_id", id));
+        //4.遍历这些权限,删除这些权限所对应的角色-权限关联关系
+        if (!CollectionUtils.isEmpty(permissions)) {
+            for (Permission permission : permissions) {
+                deleteRolePermissionByPermissionId(permission.getId());
+            }
+        }
+    }
+
+    @Override
+    public void deleteRolePermissionByPermissionId(Long permissionId) {
+        rolePermissionDao.delete(new UpdateWrapper<RolePermission>().eq("permission_id", permissionId));
+    }
+
+    @Override
+    public IPage listPermissionByModule(Long id,Integer page,Integer pageLength) {
+        return permissionDaoExt.selectPage(new Page<Permission>(page, pageLength), new QueryWrapper<Permission>().eq("module_id", id));
+    }
+
+    @Override
+    public void modifyPermission(PermissionVo permissionVo) {
+        //1.查询旧的权限
+        Permission oldPermission=permissionDaoExt.selectById(permissionVo.getId());
+        //2.更新数据
+        CloneUtil.copyPropertiesIgnoreNull(permissionVo, oldPermission);
+        permissionDaoExt.updateById(oldPermission);
+    }
+
+    @Transactional
+    @Override
+    public void deletePermission(Long id) {
+        //1.删除该权限
+        permissionDaoExt.deleteById(id);
+        //2.删除该权限对应的角色-权限对应关系
+        deleteRolePermissionByPermissionId(id);
+    }
+
+
 }

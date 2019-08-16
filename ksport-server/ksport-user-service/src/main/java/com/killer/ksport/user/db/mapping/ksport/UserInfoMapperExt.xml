@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.killer.ksport.user.db.dao.ksport.UserInfoDaoExt" >
+
+    <select id="listUser" resultType="com.killer.ksport.user.vo.UserAccountVo">
+        select ui.id,ui.name,ui.sex,ui.birthday,ui.mobile,ui.avatar,ua.account,ua.status from t_user_info ui
+        join t_user_account ua
+        on ui.id=ua.user_id
+        where ua.deleted=0 and ui.deleted=0
+        order by ui.id desc
+        <if test="offset != null and pageLength != null ">
+            limit #{offset},#{pageLength}
+        </if>
+    </select>
+</mapper>

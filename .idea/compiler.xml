@@ -19,7 +19,10 @@
         <module name="ksport-message-common" />
         <module name="ksport-mq-server" />
         <module name="ksport-quartz" />
+        <module name="ksport-redis-server" />
+        <module name="ksport-token-util" />
         <module name="ksport-user-service" />
+        <module name="ksport-zuul" />
         <module name="ksportbasemodule" />
         <module name="netty-learn" />
       </profile>
@@ -43,10 +46,13 @@
       <module name="ksport-message-common" target="1.8" />
       <module name="ksport-mq-server" target="1.8" />
       <module name="ksport-quartz" target="1.8" />
+      <module name="ksport-redis-server" target="1.8" />
       <module name="ksport-server" target="1.8" />
+      <module name="ksport-token-util" target="1.8" />
       <module name="ksport-user-service" target="1.8" />
       <module name="ksport-websocket-client" target="1.8" />
       <module name="ksport-websocket-server" target="1.8" />
+      <module name="ksport-zuul" target="1.8" />
       <module name="ksportbasemodule" target="1.5" />
       <module name="ksportwebsocketserver" target="1.8" />
       <module name="netty-learn" target="1.7" />

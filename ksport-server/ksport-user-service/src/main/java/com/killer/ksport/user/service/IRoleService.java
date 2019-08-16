@@ -27,4 +27,22 @@ public interface IRoleService extends IBaseService<Role> {
      * 查询某用户所有角色
      */
     List<Role> listRoleByUser(Long userId);
+
+    /**
+     * 删除某用户的所有用户角色关联关系
+     * @param userId
+     */
+    void deleteUserRoleByUserId(Long userId);
+
+    /**
+     * 删除角色
+     * @param id
+     */
+    void deleteRole(Long id);
+
+    /**
+     * 删除某角色下的所有用户-角色对应关系
+     * @param roleId
+     */
+    void deleteUserRoleByRoleId(Long roleId);
 }

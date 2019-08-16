@@ -22,9 +22,12 @@
       <module fileurl="file://$PROJECT_DIR$/ksport-message-center/ksport-mq-server/ksport-mq-server.iml" filepath="$PROJECT_DIR$/ksport-message-center/ksport-mq-server/ksport-mq-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-common/ksport-mq-server/ksport-mq-server.iml" filepath="$PROJECT_DIR$/ksport-common/ksport-mq-server/ksport-mq-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-base-module/ksport-quartz/ksport-quartz.iml" filepath="$PROJECT_DIR$/ksport-base-module/ksport-quartz/ksport-quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksport-common/ksport-redis-server/ksport-redis-server.iml" filepath="$PROJECT_DIR$/ksport-common/ksport-redis-server/ksport-redis-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-server/ksport-server.iml" filepath="$PROJECT_DIR$/ksport-server/ksport-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksport-common/ksport-token-util/ksport-token-util.iml" filepath="$PROJECT_DIR$/ksport-common/ksport-token-util/ksport-token-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-server/ksport-user-service/ksport-user-service.iml" filepath="$PROJECT_DIR$/ksport-server/ksport-user-service/ksport-user-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-common/ksport-websocket-server/ksport-websocket-server.iml" filepath="$PROJECT_DIR$/ksport-common/ksport-websocket-server/ksport-websocket-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksport-base-module/ksport-zuul/ksport-zuul.iml" filepath="$PROJECT_DIR$/ksport-base-module/ksport-zuul/ksport-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-message-center/netty-learn/netty-learn.iml" filepath="$PROJECT_DIR$/ksport-message-center/netty-learn/netty-learn.iml" />
     </modules>
   </component>

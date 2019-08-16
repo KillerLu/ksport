@@ -18,6 +18,7 @@
         <module>ksport-code-generator</module>
         <module>ksport-quartz</module>
         <module>ksport-file-server</module>
+        <module>ksport-zuul</module>
     </modules>
 
 

@@ -2,11 +2,11 @@ package com.killer.ksport.auth.service.impl;
 
 
 import com.killer.ksport.auth.service.ILoginService;
-import com.killer.ksport.common.security.util.TokenUtils;
+import com.killer.ksport.common.core.controller.ResponseBuilder;
+import com.killer.ksport.common.core.exception.CommonException;
 import com.killer.ksport.common.core.util.ClazzUtil;
-import com.killer.ksport.common.security.model.TokenDetail;
-import com.killer.ksport.common.security.model.view.LoginUser;
 import com.killer.ksport.feign.api.service.UserServiceCaller;
+import com.killer.ksport.token.model.LoginUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,11 +27,11 @@ public class LoginService implements ILoginService {
 
     @Override
     public LoginUser getLoginUser(String account, String password) {
-        return ClazzUtil.mapToBean((Map)userServiceCaller.getLoginUser(account, password), LoginUser.class);
+        Map retMap=(Map)userServiceCaller.getLoginUser(account, password);
+        if (ResponseBuilder.ERROR == Integer.parseInt(retMap.get("code").toString())) {
+            throw new CommonException("用户名或密码错误");
+        }
+        return ClazzUtil.mapToBean((Map)retMap.get("data"), LoginUser.class);
     }
 
-    @Override
-    public String generateToken(TokenDetail tokenDetail) {
-        return TokenUtils.generateToken(tokenDetail);
-    }
 }

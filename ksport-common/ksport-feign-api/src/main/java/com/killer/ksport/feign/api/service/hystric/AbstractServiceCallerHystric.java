@@ -1,7 +1,5 @@
 package com.killer.ksport.feign.api.service.hystric;
 
-import com.killer.ksport.common.core.web.ResponseBuilder;
-
 /**
  * @author ：Killer
  * @date ：Created in 19-7-4 下午2:37

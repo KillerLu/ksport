@@ -9,6 +9,12 @@
 spring:
   application:
     name: ksport-auth
+auth:
+  maxLoginInstance: '30'
+  token:
+    durationTime: '3600000'
+    expirationTime: '60000'
+  verifyCodeExpiredTime: '180000'
 eureka:
   instance:
     hostname: ksport-auth #服务注册中心实例的主机名
@@ -19,4 +25,4 @@ eureka:
           defaultZone: http://eureka-9001:9001/eureka,http://eureka-9002:9002/eureka,http://eureka-9003:9003/eureka  #服务注册中心的配置内容，指定服务注册中心的位置
 ribbon:
   ReadTimeout: 60000
-  ConnectTimeout: 60000 
+  ConnectTimeout: 60000

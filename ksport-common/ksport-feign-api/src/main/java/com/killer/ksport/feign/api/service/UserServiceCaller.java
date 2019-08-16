@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(value = "ksport-user", fallback = UserServiceCallerHystric.class)
 public interface UserServiceCaller {
 
-    @RequestMapping(value = "/user/getLoginUser", method = RequestMethod.GET)
+    @RequestMapping(value = "/getLoginUser", method = RequestMethod.GET)
     public Object getLoginUser(@RequestParam("account") String account,
                                  @RequestParam("password") String password);
 }

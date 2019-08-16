@@ -24,12 +24,25 @@
     <dependencies>
         <dependency>
             <groupId>com.killer</groupId>
-            <artifactId>ksport-common-security</artifactId>
+            <artifactId>ksport-common-core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
         <dependency>
             <groupId>com.killer</groupId>
             <artifactId>ksport-feign-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.killer</groupId>
+            <artifactId>ksport-redis-server</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.killer</groupId>
+            <artifactId>ksport-token-util</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

@@ -1,6 +1,5 @@
 package com.killer.ksport.im.client.service.impl;
 
-import com.killer.ksport.common.core.service.IRedisService;
 import com.killer.ksport.im.client.client.ImClient;
 import com.killer.ksport.im.client.service.IWebSocketService;
 import io.netty.channel.Channel;

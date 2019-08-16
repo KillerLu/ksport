@@ -1,7 +1,7 @@
 package com;
 
 import com.alibaba.fastjson.JSONObject;
-import com.killer.ksport.common.core.service.impl.RedisService;
+import com.killer.ksport.redis.service.IRedisService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ public class RedisTest {
     private JSONObject json = new JSONObject();
 
     @Autowired
-    private RedisService redisService;
+    private IRedisService redisService;
 
     @Test
     public void contextLoads() throws Exception {

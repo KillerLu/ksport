@@ -1,11 +1,8 @@
 package com.killer.ksport.user.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.killer.ksport.common.core.constant.RedisKeyConstant;
 import com.killer.ksport.common.core.db.view.ksport.Role;
-import com.killer.ksport.common.core.service.IRedisService;
-import com.killer.ksport.common.core.service.impl.RedisService;
-import com.killer.ksport.common.security.model.view.LoginUser;
+import com.killer.ksport.redis.service.IRedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -100,35 +97,35 @@ public class RedisTestController {
         redisService.remove("aaa");
     }
 
-    /**
-     * 插入对象
-     */
-    @RequestMapping("/hSetObject")
-    public void hSetObject() {
-        LoginUser loginUser = new LoginUser();
-        loginUser.setUserId(1l);
-        String remark="水电费水电费";
-        Role person1 = new Role("Admin1");
-        person1.setRemark(remark);
-        Role person2 = new Role("Admin2");
-        person2.setRemark(remark);
-        Role person3 = new Role("Admin3");
-        person3.setRemark(remark);
-        List<Role> list = new ArrayList<>();
-        list.add(person1);
-        list.add(person2);
-        list.add(person3);
-        loginUser.setRoles(list);
-        redisService.hSet("KEY1", "HKEY1", json.toJSONString(loginUser));
-    }
-
-    /**
-     * 获取对象
-     */
-    @RequestMapping("/hGetObject")
-    public void hGetObject() {
-        String result = redisService.hGet(RedisKeyConstant.USER_DETAILS, "1");
-        LoginUser loginUser = json.parseObject(result, LoginUser.class);
-        System.out.println(json.toJSONString(loginUser));
-    }
+//    /**
+//     * 插入对象
+//     */
+//    @RequestMapping("/hSetObject")
+//    public void hSetObject() {
+//        LoginUser loginUser = new LoginUser();
+//        loginUser.setUserId(1l);
+//        String remark="水电费水电费";
+//        Role person1 = new Role("Admin1");
+//        person1.setRemark(remark);
+//        Role person2 = new Role("Admin2");
+//        person2.setRemark(remark);
+//        Role person3 = new Role("Admin3");
+//        person3.setRemark(remark);
+//        List<Role> list = new ArrayList<>();
+//        list.add(person1);
+//        list.add(person2);
+//        list.add(person3);
+//        loginUser.setRoles(list);
+//        redisService.hSet("KEY1", "HKEY1", json.toJSONString(loginUser));
+//    }
+//
+//    /**
+//     * 获取对象
+//     */
+//    @RequestMapping("/hGetObject")
+//    public void hGetObject() {
+//        String result = redisService.hGet(RedisKeyConstant.USER_DETAILS, "1");
+//        LoginUser loginUser = json.parseObject(result, LoginUser.class);
+//        System.out.println(json.toJSONString(loginUser));
+//    }
 }

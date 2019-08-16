@@ -1,7 +1,7 @@
 package com.killer.ksport.common.core.handler;
 
 import com.killer.ksport.common.core.exception.CommonException;
-import com.killer.ksport.common.core.web.ResponseBuilder;
+import com.killer.ksport.common.core.controller.ResponseBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ControllerAdvice;

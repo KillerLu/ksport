@@ -3,17 +3,13 @@ package com.killer.ksport.quartz.controller;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.killer.ksport.common.core.controller.BaseController;
 import com.killer.ksport.common.core.db.view.quartz.JobEntity;
-import com.killer.ksport.common.core.util.CloneUtils;
-import com.killer.ksport.common.core.web.ResponseBuilder;
+import com.killer.ksport.common.core.util.CloneUtil;
+import com.killer.ksport.common.core.controller.ResponseBuilder;
 import com.killer.ksport.quartz.service.IJobEntityService;
-import com.killer.ksport.quartz.util.JobConvertUtil;
 import com.killer.ksport.quartz.vo.JobEntityVo;
 import io.swagger.annotations.ApiOperation;
-import org.apache.commons.lang3.StringUtils;
 import org.quartz.*;
 import org.quartz.impl.matchers.GroupMatcher;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -53,7 +49,7 @@ public class JobController extends BaseController {
     @ApiOperation(value = "新增job", httpMethod = "POST", notes = "新增job")
     @RequestMapping("/addJob")
     public Object addJob(JobEntityVo jobEntityVo) throws SchedulerException {
-        JobEntity jobEntity = CloneUtils.clone(jobEntityVo, JobEntity.class);
+        JobEntity jobEntity = CloneUtil.clone(jobEntityVo, JobEntity.class);
         jobEntityService.scheduleJob(jobEntity);
         return new ResponseBuilder().success().build();
     }
@@ -82,7 +78,7 @@ public class JobController extends BaseController {
     @ApiOperation(value = "更新job", httpMethod = "POST", notes = "更新job")
     @RequestMapping("/updateJob")
     public Object updateJob(JobEntityVo jobEntityVo) throws SchedulerException {
-        JobEntity jobEntity = CloneUtils.clone(jobEntityVo, JobEntity.class);
+        JobEntity jobEntity = CloneUtil.clone(jobEntityVo, JobEntity.class);
         jobEntityService.modifyJob(jobEntity);
         return new ResponseBuilder().success().build();
     }

@@ -1,7 +1,7 @@
 package com.killer.ksport.auth.service;
 
-import com.killer.ksport.common.security.model.TokenDetail;
-import com.killer.ksport.common.security.model.view.LoginUser;
+
+import com.killer.ksport.token.model.LoginUser;
 
 /**
  * @author ：Killer
@@ -15,5 +15,4 @@ public interface ILoginService {
 
     LoginUser getLoginUser(String account, String password);
 
-    String generateToken(TokenDetail tokenDetail);
 }

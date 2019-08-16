@@ -9,7 +9,6 @@ import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.Import;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 /**
  * @author ：Killer
@@ -19,7 +18,6 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
  * @version: version
  */
 @SpringBootApplication(scanBasePackages={"com.killer.ksport.*"})
-@EnableWebSecurity
 @EnableFeignClients(basePackages={"com.killer.ksport.*"})
 @EnableDiscoveryClient
 public class KsportAuthApplication {

@@ -13,11 +13,22 @@ import io.swagger.annotations.ApiModelProperty;
 @ApiModel("模块")
 public class ModuleVo {
 
+    @ApiModelProperty("模块id")
+    private Long id;
+
     @ApiModelProperty("模块名称")
     private String name;
 
     @ApiModelProperty("模块图标")
     private String logo;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getLogo() {
         return logo;

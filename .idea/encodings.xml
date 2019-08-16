@@ -9,16 +9,18 @@
     <file url="file://$PROJECT_DIR$/ksport-base-module/ksport-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-base-module/ksport-file-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-base-module/ksport-quartz" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ksport-base-module/ksport-zuul" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-common/ksport-common-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-common/ksport-common-security" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-common/ksport-feign-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ksport-common/ksport-redis-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ksport-common/ksport-token-util" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-message-center" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-message-center/ksport-im-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-message-center/ksport-im-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-message-center/ksport-message-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-message-center/ksport-mq-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ksport-message-center/ksport-websocket-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-message-center/netty-learn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ksport-server/ksport-user-service" charset="UTF-8" />
