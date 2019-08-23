@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.killer.ksport.group.db.dao.ksport.GroupUserDaoExt" >
+
+    <select id="listGroupUserByGroupId" resultType="com.killer.ksport.group.vo.GroupUserVo">
+        select g.id,u.id userid,g.id groupid,u.name username,u.sex,
+        u.birthday,u.mobile,u.avatar,g.name groupname,gu.head_teacher headteacher
+        from t_group_user gu
+        join t_group g
+        on gu.group_id=g.id and g.deleted=0
+        join t_user_info u
+        on gu.user_id=u.id and u.deleted=0
+        where gu.deleted=0 and gu.group_id=#{groupId}
+    </select>
+</mapper>

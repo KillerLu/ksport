@@ -21,4 +21,6 @@ public interface UserServiceCaller {
     @RequestMapping(value = "/getLoginUser", method = RequestMethod.GET)
     public Object getLoginUser(@RequestParam("account") String account,
                                  @RequestParam("password") String password);
+
+
 }

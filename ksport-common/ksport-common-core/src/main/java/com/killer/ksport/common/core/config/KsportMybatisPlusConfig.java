@@ -38,7 +38,7 @@ import java.util.List;
  */
 @Configuration
 @MapperScan(basePackages = {"com.killer.ksport.common.core.db.dao.ksport",
-        "com.killer.ksport.user.db.dao.ksport"},sqlSessionTemplateRef = "ksportSqlSessionTemplate")
+        "com.killer.ksport.user.db.dao.ksport","com.killer.ksport.group.db.dao.ksport"}, sqlSessionTemplateRef = "ksportSqlSessionTemplate")
 @EnableTransactionManagement(proxyTargetClass = true)
 public class KsportMybatisPlusConfig {
 
