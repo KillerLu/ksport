@@ -17,6 +17,8 @@
         <module>ksport-message-common</module>
         <module>ksport-im-client</module>
         <module>ksport-mq-server</module>
+        <module>ksport-message-api</module>
+        <module>ksport-message-server</module>
     </modules>
 
 

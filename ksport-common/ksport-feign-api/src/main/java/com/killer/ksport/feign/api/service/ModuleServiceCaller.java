@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @modified By：
  * @version: version
  */
-@Service("moduleServiceCaller")
+@Service
 @FeignClient(value = "ksport-user", fallback = ModuleServiceCallerHystric.class)
 public interface ModuleServiceCaller {
 

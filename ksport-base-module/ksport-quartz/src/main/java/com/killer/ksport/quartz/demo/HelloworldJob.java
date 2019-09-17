@@ -11,9 +11,9 @@ import org.quartz.JobExecutionException;
  * @modified By：
  * @version: version
  */
-//public class HelloworldJob implements Job {
-//    @Override
-//    public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
-//        System.out.println("Hello world!:" + jobExecutionContext.getJobDetail().getKey());
-//    }
-//}
+public class HelloworldJob implements Job {
+    @Override
+    public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
+        System.out.println("Hello world!:" + jobExecutionContext.getJobDetail().getKey());
+    }
+}

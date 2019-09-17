@@ -53,9 +53,16 @@
         </dependency>
 
         <dependency>
+            <groupId>com.killer</groupId>
+            <artifactId>ksport-message-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
+
 
     </dependencies>
 

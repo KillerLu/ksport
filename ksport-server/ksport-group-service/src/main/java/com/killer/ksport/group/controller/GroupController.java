@@ -14,6 +14,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -118,6 +119,20 @@ public class GroupController extends BaseController{
         List<GroupUserVo> groupUserVos = groupService.listGroupUserDetailByGroupId(groupId);
         return builder.success().data(groupUserVos).build();
     }
+
+
+    @ApiOperation(value = "根据用户id删除群组用户关系", httpMethod = "POST", notes = "根据用户id删除群组用户关系")
+    @RequestMapping(value = "/deleteGroupUserByUserId",method = RequestMethod.POST)
+    public Object deleteGroupUserByUserId(Long userId){
+        ResponseBuilder builder = new ResponseBuilder();
+        try {
+            groupService.deleteGroupUserByUserId(userId);
+            return builder.success().build();
+        } catch (Exception e) {
+            return builder.error().message("操作失败").build();
+        }
+    }
+
 
 }
 

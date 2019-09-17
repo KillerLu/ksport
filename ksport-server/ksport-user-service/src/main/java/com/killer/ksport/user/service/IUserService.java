@@ -56,11 +56,5 @@ public interface IUserService extends IBaseService<UserInfo> {
      */
     UserAccount getUserAccountByAccount(String account);
 
-//    /**
-//     * 获取登录用户信息
-//     * @param account
-//     * @param password
-//     * @return
-//     */
-//    LoginUser getLoginUser(String account, String password);
+
 }

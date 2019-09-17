@@ -17,8 +17,10 @@
       <module fileurl="file://$PROJECT_DIR$/ksport-server/ksport-group-service/ksport-group-service.iml" filepath="$PROJECT_DIR$/ksport-server/ksport-group-service/ksport-group-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-message-center/ksport-im-client/ksport-im-client.iml" filepath="$PROJECT_DIR$/ksport-message-center/ksport-im-client/ksport-im-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-message-center/ksport-im-server/ksport-im-server.iml" filepath="$PROJECT_DIR$/ksport-message-center/ksport-im-server/ksport-im-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksport-message-center/ksport-message-api/ksport-message-api.iml" filepath="$PROJECT_DIR$/ksport-message-center/ksport-message-api/ksport-message-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-message-center/ksport-message-center.iml" filepath="$PROJECT_DIR$/ksport-message-center/ksport-message-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-message-center/ksport-message-common/ksport-message-common.iml" filepath="$PROJECT_DIR$/ksport-message-center/ksport-message-common/ksport-message-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ksport-message-center/ksport-message-server/ksport-message-server.iml" filepath="$PROJECT_DIR$/ksport-message-center/ksport-message-server/ksport-message-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-message-server/ksport-message-server/ksport-message-server.iml" filepath="$PROJECT_DIR$/ksport-message-server/ksport-message-server/ksport-message-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-message-center/ksport-mq-server/ksport-mq-server.iml" filepath="$PROJECT_DIR$/ksport-message-center/ksport-mq-server/ksport-mq-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ksport-common/ksport-mq-server/ksport-mq-server.iml" filepath="$PROJECT_DIR$/ksport-common/ksport-mq-server/ksport-mq-server.iml" />

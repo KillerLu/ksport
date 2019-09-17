@@ -129,5 +129,4 @@ public class UserController extends BaseController {
         return builder.success().data(loginUser).build();
     }
 
-
 }

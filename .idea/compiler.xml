@@ -17,7 +17,9 @@
         <module name="ksport-group-service" />
         <module name="ksport-im-client" />
         <module name="ksport-im-server" />
+        <module name="ksport-message-api" />
         <module name="ksport-message-common" />
+        <module name="ksport-message-server" />
         <module name="ksport-mq-server" />
         <module name="ksport-quartz" />
         <module name="ksport-redis-server" />
@@ -44,8 +46,10 @@
       <module name="ksport-group-service" target="1.8" />
       <module name="ksport-im-client" target="1.8" />
       <module name="ksport-im-server" target="1.8" />
+      <module name="ksport-message-api" target="1.8" />
       <module name="ksport-message-center" target="1.8" />
       <module name="ksport-message-common" target="1.8" />
+      <module name="ksport-message-server" target="1.8" />
       <module name="ksport-mq-server" target="1.8" />
       <module name="ksport-quartz" target="1.8" />
       <module name="ksport-redis-server" target="1.8" />

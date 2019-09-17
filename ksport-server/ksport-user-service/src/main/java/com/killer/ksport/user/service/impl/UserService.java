@@ -1,14 +1,21 @@
 package com.killer.ksport.user.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
+import com.killer.ksport.common.core.constant.TransactionActionConstant;
 import com.killer.ksport.common.core.db.dao.ksport.UserAccountDao;
 import com.killer.ksport.common.core.db.view.ksport.UserAccount;
 import com.killer.ksport.common.core.db.view.ksport.UserInfo;
+import com.killer.ksport.common.core.db.view.message.TransactionMessage;
+import com.killer.ksport.common.core.enums.RequestTypeEnum;
 import com.killer.ksport.common.core.exception.CommonException;
+import com.killer.ksport.common.core.model.TransactionMsgBody;
 import com.killer.ksport.common.core.service.impl.BaseService;
 import com.killer.ksport.common.core.util.CloneUtil;
 import com.killer.ksport.common.security.util.MD5Util;
+import com.killer.ksport.feign.api.service.GroupServiceCaller;
+import com.killer.ksport.message.api.TransactionMsgApi;
 import com.killer.ksport.user.db.dao.ksport.UserInfoDaoExt;
 import com.killer.ksport.user.service.IModuleService;
 import com.killer.ksport.user.service.IRoleService;
@@ -18,7 +25,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.UUID;
 
 /**
  * @author ：Killer
@@ -36,6 +46,10 @@ public class UserService extends BaseService<UserInfoDaoExt,UserInfo> implements
     private IModuleService moduleService;
     @Autowired
     private UserAccountDao userAccountDao;
+    @Autowired
+    private GroupServiceCaller groupServiceCaller;
+    @Autowired
+    private TransactionMsgApi transactionMsgApi;
 
     @Transactional
     @Override
@@ -86,12 +100,22 @@ public class UserService extends BaseService<UserInfoDaoExt,UserInfo> implements
     @Transactional
     @Override
     public void deleteUser(Long id) {
+        //删除user同时需要删除群组用户关系,这里涉及分布式事务
+        //一.预发送消息
+        String uuid= UUID.randomUUID().toString();
+        Map<String, Object> params = new HashMap<String,Object>();
+        params.put("userId", id);
+        TransactionMsgBody transactionMsgBody = new TransactionMsgBody(id, uuid, "/deleteGroupUserByUserId", RequestTypeEnum.POST.getValue(), params);
+        transactionMsgApi.prepareTransactionMsg(uuid, JSON.toJSONString(transactionMsgBody), TransactionActionConstant.DELETE_GROUP_USER_BY_USERID,"ksport-user","ksport-group");
+        //二.执行本地事务操作
         //1.删除用户信息
         baseMapper.deleteById(id);
         //2.删除用户账户
         userAccountDao.delete(new UpdateWrapper<UserAccount>().eq("user_id", id));
         //3.删除用户角色关联关系
         roleService.deleteUserRoleByUserId(id);
+        //三.确认并发送消息
+        transactionMsgApi.confirmMsgToSend(uuid);
     }
 
     @Override
@@ -99,20 +123,4 @@ public class UserService extends BaseService<UserInfoDaoExt,UserInfo> implements
         return userAccountDao.selectOne(new QueryWrapper<UserAccount>().eq("account", account));
     }
 
-//    @Override
-//    public LoginUser getLoginUser(String account, String password) {
-//        //1.根据账户名查询该用户账户是否存在
-//        UserAccount userAccount = userAccountDao.selectOne(new QueryWrapper<UserAccount>().eq("account", account));
-//        if (userAccount == null||!userAccount.getPassword().equals(password)) {
-//            return null;
-//        }
-//        LoginUser loginUser = CloneUtil.clone(userAccount, LoginUser.class);
-//        //2.查询对应角色
-//        loginUser.setRoles(roleService.listRoleByUser(userAccount.getUserId()));
-//        //3.查询对应权限
-//        loginUser.setPermissions(moduleService.listPermissionByUser(userAccount.getUserId()));
-//        //4.设置是否禁用
-//        loginUser.setEnable(StatusEnum.NORMAL.getValue().equals(userAccount.getStatus()));
-//        return loginUser;
-//    }
 }

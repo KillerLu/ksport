@@ -72,4 +72,6 @@ public interface IGroupService extends IBaseService<Group>{
      * @return
      */
     List<GroupUserVo> listGroupUserDetailByGroupId(Long groupId);
+
+    void deleteGroupUserByUserId(Long userId);
 }

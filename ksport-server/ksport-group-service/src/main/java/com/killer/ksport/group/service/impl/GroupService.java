@@ -241,4 +241,10 @@ public class GroupService extends BaseService<GroupDao, Group> implements IGroup
     public List<GroupUserVo> listGroupUserDetailByGroupId(Long groupId) {
         return groupUserDaoExt.listGroupUserByGroupId(groupId);
     }
+
+    @Override
+    public void deleteGroupUserByUserId(Long userId) {
+        groupUserDaoExt.delete(new UpdateWrapper<GroupUser>().eq("user_id", userId));
+    }
+
 }
