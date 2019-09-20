@@ -18,6 +18,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(value = "ksport-group", fallback = GroupServiceCallerHystric.class)
 public interface GroupServiceCaller {
 
-    @RequestMapping(value = "/testAdd", method = RequestMethod.POST)
-    public Object testAdd();
+    @RequestMapping(value = "/checkGroupUserByUserId", method = RequestMethod.GET)
+    public Object checkGroupUserByUserId(@RequestParam("userId") long userId);
 }

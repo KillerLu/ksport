@@ -16,4 +16,9 @@ public class UserServiceCallerHystric extends AbstractServiceCallerHystric imple
     public Object getLoginUser(String account, String password) {
         return responseError();
     }
+
+    @Override
+    public Object checkUser(Long id) {
+        return responseError();
+    }
 }

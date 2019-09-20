@@ -22,5 +22,8 @@ public interface UserServiceCaller {
     public Object getLoginUser(@RequestParam("account") String account,
                                  @RequestParam("password") String password);
 
+    @RequestMapping(value = "/checkUser", method = RequestMethod.GET)
+    public Object checkUser(@RequestParam("id") Long id);
+
 
 }

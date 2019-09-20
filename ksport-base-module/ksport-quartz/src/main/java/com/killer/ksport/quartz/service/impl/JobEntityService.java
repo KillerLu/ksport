@@ -41,7 +41,7 @@ public class JobEntityService extends BaseService<JobEntityDao, JobEntity> imple
         if (jobDetail != null) {
             schedulerFactoryBean.getScheduler().scheduleJob(jobDetail, JobConvertUtil.getTrigger(job));
         }
-        //保存该job(新增是job的id是null,而重启时job的id不为null
+        //保存该job(新增时job的id是null,而重启时job的id不为null
         if (job.getId() == null) {
             super.save(job);
         }

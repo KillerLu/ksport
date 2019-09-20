@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.killer.ksport.common.core.controller.BaseController;
 import com.killer.ksport.common.core.controller.ResponseBuilder;
 import com.killer.ksport.common.core.db.view.ksport.Group;
+import com.killer.ksport.common.core.db.view.ksport.GroupUser;
+import com.killer.ksport.common.core.db.view.ksport.UserInfo;
 import com.killer.ksport.common.core.util.CloneUtil;
 import com.killer.ksport.group.service.IGroupService;
 import com.killer.ksport.group.vo.GroupUserVo;
@@ -133,6 +135,22 @@ public class GroupController extends BaseController{
         }
     }
 
+
+    @ApiOperation(value = "根据用户id查看群组用户时候存在", httpMethod = "GET", notes = "根据用户id查看群组用户时候存在",response = Boolean.class)
+    @RequestMapping("/checkGroupUserByUserId")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "userId", value = "用户id", required = true, dataType = "int64", paramType = "query")
+    })
+    public Object checkUser(@RequestParam(value = "userId") Long userId){
+        ResponseBuilder builder = new ResponseBuilder();
+        try {
+            List<GroupUser> groupUsers = groupService.listGroupUserByUserId(userId);
+            //若该用户存在则返回成功
+            return builder.success().data(CollectionUtils.isNotEmpty(groupUsers) ? true : false).build();
+        } catch (Exception e) {
+            return builder.error().build();
+        }
+    }
 
 }
 

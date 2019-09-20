@@ -238,6 +238,11 @@ public class GroupService extends BaseService<GroupDao, Group> implements IGroup
 
 
     @Override
+    public List<GroupUser> listGroupUserByUserId(Long userId) {
+        return groupUserDaoExt.selectList(new QueryWrapper<GroupUser>().eq("userId", userId));
+    }
+
+    @Override
     public List<GroupUserVo> listGroupUserDetailByGroupId(Long groupId) {
         return groupUserDaoExt.listGroupUserByGroupId(groupId);
     }

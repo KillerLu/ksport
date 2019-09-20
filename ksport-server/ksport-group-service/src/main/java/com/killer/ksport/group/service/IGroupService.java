@@ -1,6 +1,7 @@
 package com.killer.ksport.group.service;
 
 import com.killer.ksport.common.core.db.view.ksport.Group;
+import com.killer.ksport.common.core.db.view.ksport.GroupUser;
 import com.killer.ksport.common.core.service.IBaseService;
 import com.killer.ksport.group.vo.GroupUserVo;
 import com.killer.ksport.group.vo.GroupVo;
@@ -67,11 +68,22 @@ public interface IGroupService extends IBaseService<Group>{
     GroupVo getGroupAndChildGroups(Long id);
 
     /**
+     * 根据用户id查询群组用户
+     * @param userId
+     * @return
+     */
+    List<GroupUser> listGroupUserByUserId(Long userId);
+
+    /**
      * 根据群组id查询群组用户详细信息(查询某群组下所有用户)
      * @param groupId
      * @return
      */
     List<GroupUserVo> listGroupUserDetailByGroupId(Long groupId);
 
+    /**
+     * 根据用户id删除群组用户
+     * @param userId
+     */
     void deleteGroupUserByUserId(Long userId);
 }

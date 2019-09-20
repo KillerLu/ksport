@@ -41,8 +41,6 @@ import java.util.stream.Collectors;
 @RestController
 public class UserController extends BaseController {
 
-
-
     @Autowired
     private IUserService userService;
     @Autowired
@@ -127,6 +125,22 @@ public class UserController extends BaseController {
             loginUser.setPermissions(permissions.stream().map(p->p.getCode()).collect(Collectors.toList()));
         }
         return builder.success().data(loginUser).build();
+    }
+
+    @ApiOperation(value = "查询某用户是否存在", httpMethod = "GET", notes = "查询某用户是否存在",response = Boolean.class)
+    @RequestMapping("/checkUser")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "id", value = "用户id", required = true, dataType = "int64", paramType = "query")
+    })
+    public Object checkUser(@RequestParam(value = "id") Long id){
+        ResponseBuilder builder = new ResponseBuilder();
+        try {
+            UserInfo userInfo=userService.getById(id);
+            //若该用户存在则返回成功
+            return builder.success().data(userInfo!=null?true:false).build();
+        } catch (Exception e) {
+            return builder.error().build();
+        }
     }
 
 }

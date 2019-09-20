@@ -3,6 +3,8 @@ package com.killer.ksport.message.service;
 import com.killer.ksport.common.core.db.view.message.TransactionMessage;
 import com.killer.ksport.common.core.service.IBaseService;
 
+import java.util.List;
+
 /**
  * @author ：Killer
  * @date ：Created in 19-9-11 下午3:47
@@ -28,4 +30,16 @@ public interface ITransactionMsgService extends IBaseService<TransactionMessage>
      * @param uuid
      */
     public void acknowledgement(String uuid);
+
+    /**
+     * 查询逾期未确认的事务消息
+     * @return
+     */
+    public List<TransactionMessage> listUnConfirmMessage();
+
+    /**
+     * 查询逾期未应答的事务消息
+     * @return
+     */
+    List<TransactionMessage> listUnAckMessage();
 }

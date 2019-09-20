@@ -1,10 +1,14 @@
 package com.killer.ksport.message.api;
 
+import com.killer.ksport.common.core.db.view.message.TransactionMessage;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
 
 /**
  * @author ：Killer
@@ -45,9 +49,27 @@ public interface TransactionMsgApi {
      * 获取逾期仍然还是待确认的消息
      * @return
      */
-    @RequestMapping(value = "check", method = RequestMethod.GET)
-    Object listUnConfirmMessage();
+    @RequestMapping(value = "listUnConfirmMessage", method = RequestMethod.GET)
+    List<TransactionMessage> listUnConfirmMessage();
 
+    /**
+     * 根据id删除事务消息
+     * @param id
+     */
+    @RequestMapping(value = "deleteTransactionMsgById", method = RequestMethod.GET)
+    void deleteTransactionMsgById(@RequestParam("id")Long id);
 
+    /**
+     * 更新事务消息
+     * @param transactionMessage
+     */
+    @RequestMapping(value = "updateTransactionMsg", method = RequestMethod.POST)
+    Object updateTransactionMsg(@RequestBody TransactionMessage transactionMessage);
 
+    /**
+     * 获取预期仍然还是待发送的消息
+     * @return
+     */
+    @RequestMapping(value = "listUnAckMessage", method = RequestMethod.GET)
+    List<TransactionMessage> listUnAckMessage();
 }
